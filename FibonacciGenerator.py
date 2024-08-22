@@ -1,0 +1,20 @@
+# Beginning from 0 and 1; in the Fibonacci sequence, each number is the sum of the two preceding ones.
+# The first 20 numbers in the sequence are below:
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181
+
+print("Il generatore di Fibonacci!")
+
+numero = int(input("How many Fibonacci numbers would you like to generate? "))
+
+
+def fib(numero):
+    a, b = 0, 1
+    for n in range(numero):
+        yield a
+        a, b = b, a + b
+
+
+for x in fib(numero):
+    print(x)
+
+print("Bellissimo!")
