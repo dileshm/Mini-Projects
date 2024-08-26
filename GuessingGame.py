@@ -1,9 +1,3 @@
-# generate a number from 1 to 10
-# input from user
-# check if that input is a number 1 between 10
-# check if the number is the right guess
-# otherwise try again
-
 from random import randint
 
 lowest_num = 1
